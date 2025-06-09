@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "PP";
+    src: url("./fonts/PP-Woodland.ttf") format("truetype");
+}
+
+.container {
+    font-family: "PP", sans-serif;
+}
