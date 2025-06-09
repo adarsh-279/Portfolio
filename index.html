@@ -15,11 +15,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <div class="main h-auto w-screen bg-[#191919]">
-      <div class="container mx-auto pt-5 text-white">
-        <div
-          class="nav flex h-10 w-3/4 mx-auto py-3 rounded-full items-center justify-between bg-[#2A2A2A]"
-        >
+    <div class="main h-auto max-w-screen bg-[#191919]">
+
+      <div class="container mx-auto overflow-x-hidden pt-5 text-white">
+
+        <div class="nav flex h-10 w-3/4 mx-auto py-3 rounded-full items-center justify-between bg-[#2A2A2A]">
           <div class="name mx-10 text-xs">shawadarsh279@gmail.com</div>
           <i class="ri-menu-line lg:hidden mx-10"></i>
           <div class="hidden lg:flex links mx-10 text-xs items-center gap-5">
@@ -31,24 +31,15 @@
           </div>
         </div>
 
-        <div
-          class="intro h-130 w-3/4 flex-col items-center justify-center xl:h-120 w-3/4 mx-auto mt-10 flex items-center justify-between bg-[#2A2A2A]">
-          <div class="img h-90 w-3/4 object-cover xl:flex-row">
-            <img
-              class="object-cover rounded-lg h-80 w-full xl:flex-row"
-              src="./images/pic.jpg"
-              alt=""/>
+        <div class="intro h-auto w-3/4 mx-auto mt-10 flex flex-col items-center justify-center bg-[#2A2A2A] xl:h-120 xl:flex-row xl:justify-evenly xl:mt-12">
+          <div class="img h-90 w-3/4 object-cover xl:w-auto flex items-center justify-center">
+            <img class="object-cover rounded-lg h-80 w-full mt-8 mb-2 xl:h-96 xl:w-auto xl:mt-2" 
+            src="./images/pic.jpg" alt=""/>
           </div>
-          <div class="text">
-            <h1
-              class="text-4xl mb-5 flex items-center justify-center xl:flex-row"
-            >
-              I am Adarsh
-            </h1>
-            <h2 class="text-xl flex items-center justify-center xl:flex-row">
-              WEB DEVELOPER + UI DESIGNER
-            </h2>
-            <div class="socials flex items-center justify-center gap-5 mt-4 text-2xl">
+          <div class="text w-3/4 text-center xl:w-auto xl:text-left">
+            <h1 class="text-4xl mb-2">I am Adarsh</h1>
+            <h2 class="text-xl">WEB DEVELOPER + UI DESIGNER</h2>
+            <div class="socials flex items-center justify-center gap-5 mt-4 mb-4 text-2xl xl:justify-start">
               <a href="https://www.linkedin.com/in/adarsh-shaw-02999b2a5"><i class="ri-linkedin-box-fill text-[#0A66C2]"></i></a>
               <a href="https://github.com/adarsh-279"><i class="ri-github-fill"></i></a>
               <a href="https://x.com/Adarsh_Shaw27?t=AIQqcU0W6xoJwg4FE0elgw&s=09"><i class="ri-twitter-x-line"></i></a>
@@ -85,7 +76,7 @@
             </div>
 
             <div>
-              <img class="w-20 h-16" src="https://img.icons8.com/?size=100&id=16318&format=png&color=FFFFFF" />              
+              <img class="w-20 h-auto" src="https://img.icons8.com/?size=100&id=16318&format=png&color=FFFFFF" />              
               <h1 class="h-auto width-auto flex items-center justify-center opacity-30">Github</h1>
             </div>
 
@@ -102,11 +93,11 @@
           </div>
         </div>
 
-        <div class="projects flex flex-col items-center justify-center pb-10">
+        <div class="projects flex flex-col items-center justify-center pb-12">
              <h1 class="h-10 w-30 text-4xl mx-auto mt-15">Projects</h1>
-              <div class="project1 h-60 w-100 mx-auto mt-10 pt-2 flex flex-col items-center justify-center rounded-lg bg-[#2A2A2A]">
+              <div class="project1 h-60 w-100 mx-auto mt-10 pt-2 flex flex-col items-center justify-center rounded-lg bg-[#2A2A2A] xl:h-auto xl:w-auto">
                <img class="mt-4" src="./images/p1.jpeg" alt="">
-               <div class="flex items-center justify-center gap-4 mt-2 mb-4">
+               <div class="flex items-center justify-center gap-4 mt-2 mb-4 xl:mb-2">
                <a href="https://adarsh-279.github.io/Obys-Agency/">
                <i class="ri-links-line text-xl mb-2"></i>
                </a>
@@ -119,20 +110,21 @@
         </div>
 
         <div class="footer flex justify-evenly pb-10 pt-10 border-t-2 border-[#686870] w-3/4 mx-auto">
-           <div class="flex flex-col links mx-10 text-xs items-center justify-between gap-5 opacity-50">
+          <div class="flex flex-col links mx-10 text-xs items-center justify-between gap-5 opacity-50">
             <a href="#">Home</a>
             <a href="#">Skills</a>
             <a href="#">Project</a>
             <a href="#">Resume</a>
           </div>
           <div class="flex flex-col socials mx-10 text-2xl items-center justify-evenly opacity-80">
-              <a href="https://www.linkedin.com/in/adarsh-shaw-02999b2a5"><i class="ri-linkedin-box-fill text-[#0A66C2]"></i></a>
-              <a href="https://github.com/adarsh-279"><i class="ri-github-fill"></i></a>
-              <a href="https://x.com/Adarsh_Shaw27?t=AIQqcU0W6xoJwg4FE0elgw&s=09"><i class="ri-twitter-x-line"></i></a>
-            </div>
+            <a href="https://www.linkedin.com/in/adarsh-shaw-02999b2a5"><i class="ri-linkedin-box-fill text-[#0A66C2]"></i></a>
+            <a href="https://github.com/adarsh-279"><i class="ri-github-fill"></i></a>
+            <a href="https://x.com/Adarsh_Shaw27?t=AIQqcU0W6xoJwg4FE0elgw&s=09"><i class="ri-twitter-x-line"></i></a>
+          </div>
         </div>
-        </div>
+
       </div>
+
     </div>
 
     <script src="script.js"></script>
