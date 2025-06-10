@@ -22,19 +22,21 @@
 
       <div class="container mx-auto overflow-x-hidden pt-5 text-white">
 
-        <div class="nav flex h-10 w-3/4 mx-auto py-3 rounded-full items-center justify-between bg-[#2A2A2A]">
-          <div class="name mx-10 text-xs">shawadarsh279@gmail.com</div>
-          <i class="ri-menu-line lg:hidden mx-10"></i>
-          <div class="links hidden lg:flex mx-10 text-xs items-center gap-5">
-            <a href="#">Home</a>
-            <a href="#">Skills</a>
-            <a href="#">Project</a>
-            <a href="#">Contact</a>
-            <a href="#">Resume</a>
-          </div>
-        </div>
+<div id="nav" class="nav flex h-10 w-3/4 mx-auto py-3 rounded-full items-center justify-between bg-[#2A2A2A]">
+  <div class="name mx-10 text-xs text-white">shawadarsh279@gmail.com</div>
 
-        <div class="intro h-auto w-3/4 mx-auto mt-10 flex flex-col items-center justify-center bg-[#2A2A2A] xl:h-120 xl:flex-row xl:justify-evenly xl:mt-12">
+  <i id="menu-btn" class="ri-menu-line lg:hidden mx-10 text-white text-xl cursor-pointer"></i>
+
+  <div id="menu-links" class="links lg:flex mx-10 text-xs items-center gap-5 text-white">
+    <a href="#nav">Home</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Project</a>
+    <a href="#contact">Contact</a>
+    <a href="#resume">Resume</a>
+  </div>
+</div>
+
+        <div id="intro" class="intro h-auto w-3/4 mx-auto mt-10 flex flex-col items-center justify-center bg-[#2A2A2A] xl:h-120 xl:flex-row xl:justify-evenly xl:mt-12">
           <div class="img h-90 w-3/4 object-cover xl:w-auto flex items-center justify-center">
             <img class="object-cover rounded-lg h-80 w-full mt-8 mb-2 xl:h-96 xl:w-auto xl:mt-2" 
             src="./images/pic.jpg" alt=""/>
@@ -50,7 +52,7 @@
           </div>
         </div>
 
-        <div class="skills h-auto w-3/4 mx-auto mt-12 border-t-2 border-b-2 border-[#686870]" data-scroll data-scroll-speed="2.5">
+        <div id="skills" class="skills h-auto w-3/4 mx-auto mt-12 border-t-2 border-b-2 border-[#686870]" data-scroll data-scroll-speed="2.5">
           <div class="icons grid grid-cols-4 gap-6 p-2 p-6 place-items-center ">
  
             <div>
@@ -96,8 +98,8 @@
           </div>
         </div>
 
-        <div class="projects flex flex-col items-center justify-center pb-12" data-scroll data-scroll-speed="1">
-             <h1 class="h-10 w-30 text-4xl mx-auto mt-15">Projects</h1>
+        <div id="projects" class="projects flex flex-col items-center justify-center pb-12" data-scroll data-scroll-speed="1">
+             <h1 class="project-text h-10 w-30 text-4xl mx-auto mt-15">Projects</h1>
               <div class="project1 h-60 w-100 mx-auto mt-10 pt-2 flex flex-col items-center justify-center rounded-lg bg-[#2A2A2A] xl:h-auto xl:w-auto">
                <img class="mt-4" src="./images/p1.jpeg" alt="">
                <div class="flex items-center justify-center gap-4 mt-2 mb-4 xl:mb-2">
@@ -114,9 +116,9 @@
 
         <div class="footer flex justify-evenly pb-10 pt-10 border-t-2 border-[#686870] w-3/4 mx-auto" data-scroll-speed="2">
           <div class="flex flex-col links mx-10 text-xs items-center justify-between gap-5 opacity-50">
-            <a href="#">Home</a>
-            <a href="#">Skills</a>
-            <a href="#">Project</a>
+            <a href="#nav">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Project</a>
             <a href="#">Resume</a>
           </div>
           <div class="flex flex-col socials mx-10 text-2xl items-center justify-evenly opacity-80">

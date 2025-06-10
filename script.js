@@ -29,9 +29,9 @@ ScrollTrigger.refresh();
 
 gsap.registerPlugin(ScrollTrigger);
 
-const mm = gsap.matchMedia();
+const mm1 = gsap.matchMedia();
 
-mm.add("(min-width: 768px)", () => {
+mm1.add("(min-width: 768px)", () => {
     Shery.mouseFollower({
       //Parameters are optional.
       skew: true,
@@ -90,7 +90,6 @@ gsap.from(".projects", {
     ease: "sine.in",
 });
 
-
 gsap.from(".footer", {
       scrollTrigger: {
       trigger: ".footer",
@@ -101,3 +100,19 @@ gsap.from(".footer", {
     duration: 1,
     ease: "sine.in",
 });
+
+const menuBtn = document.getElementById("menu-btn");
+  const menuLinks = document.getElementById("menu-links");
+
+  menuBtn.onclick = () => {
+    menuLinks.classList.toggle("hidden");
+
+    // Toggle icon
+    if (menuBtn.classList.contains("ri-menu-line")) {
+      menuBtn.classList.remove("ri-menu-line");
+      menuBtn.classList.add("ri-close-line");
+    } else {
+      menuBtn.classList.remove("ri-close-line");
+      menuBtn.classList.add("ri-menu-line");
+    }
+};
