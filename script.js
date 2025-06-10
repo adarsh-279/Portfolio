@@ -78,3 +78,14 @@ gsap.from(".skills .icons > div", {
     stagger: 0.2,
     ease: "power2.out",
 });
+
+gsap.from(".projects", {
+      scrollTrigger: {
+      trigger: ".project1",
+      start: "top 90%",
+      scroller: ".main",
+    },
+    opacity: 0,
+    duration: 2,
+    ease: "sine.in",
+});
