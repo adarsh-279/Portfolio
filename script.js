@@ -64,3 +64,17 @@ tl.from(" .intro ", {
     ease: "sine.in",
     stagger: 0.2,
 });
+
+gsap.from(".skills .icons > div", {
+    scrollTrigger: {
+      trigger: ".skills",
+      start: "top 80%",
+      end: "bottom 80%",
+      scroller: ".main",
+    },
+    opacity: 0,
+    y: 50,
+    duration: 2,
+    stagger: 0.2,
+    ease: "power2.out",
+});
