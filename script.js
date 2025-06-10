@@ -46,3 +46,21 @@ mm.add("(min-width: 768px)", () => {
     });
     
 });
+
+var tl = gsap.timeline();
+
+ tl.from(".nav", {
+    y: -100,
+    opacity: 0,
+    duration: 1,
+    delay: 0.5,
+    ease: "power1.in",
+    stagger: 0.2
+});
+
+tl.from(" .intro ", {
+    opacity: 0,
+    duration: 2,
+    ease: "sine.in",
+    stagger: 0.2,
+});
