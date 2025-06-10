@@ -89,3 +89,15 @@ gsap.from(".projects", {
     duration: 2,
     ease: "sine.in",
 });
+
+
+gsap.from(".footer", {
+      scrollTrigger: {
+      trigger: ".footer",
+      start: "top 90%",
+      scroller: ".main",
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "sine.in",
+});
