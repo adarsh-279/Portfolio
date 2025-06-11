@@ -101,6 +101,7 @@ gsap.from(".footer", {
     ease: "sine.in",
 });
 
+/*
 const menuBtn = document.getElementById("menu-btn");
   const menuLinks = document.getElementById("menu-links");
 
@@ -116,3 +117,11 @@ const menuBtn = document.getElementById("menu-btn");
       menuBtn.classList.add("ri-menu-line");
     }
 };
+ 
+const menuLink2 = document.querySelector("#menu-link2");
+  
+menuBtn.addEventListener("click", () => {
+  menuLinks.classList.toggle("hidden");
+  menuBtn.classList.remove("ri-menu-line");
+  menuBtn.classList.add("ri-close-line");
+}); */
