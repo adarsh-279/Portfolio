@@ -101,27 +101,34 @@ gsap.from(".footer", {
     ease: "sine.in",
 });
 
-/*
 const menuBtn = document.getElementById("menu-btn");
-  const menuLinks = document.getElementById("menu-links");
+const mobileMenu = document.getElementById("mobile-menu");
+const mobileMenuOverlay = document.getElementById("mobile-menu-overlay");
+const menuLinks = document.querySelectorAll("#mobile-menu a[data-close-menu]");
 
-  menuBtn.onclick = () => {
-    menuLinks.classList.toggle("hidden");
+function openMobileMenu() {
+  mobileMenu.classList.replace("translate-x-full", "translate-x-0");
+  mobileMenuOverlay.classList.remove("hidden");
+  document.body.classList.add("overflow-hidden");   // stop background scroll
+  menuBtn.classList.replace("ri-menu-line", "ri-close-line");
+}
 
-    // Toggle icon
-    if (menuBtn.classList.contains("ri-menu-line")) {
-      menuBtn.classList.remove("ri-menu-line");
-      menuBtn.classList.add("ri-close-line");
-    } else {
-      menuBtn.classList.remove("ri-close-line");
-      menuBtn.classList.add("ri-menu-line");
-    }
-};
- 
-const menuLink2 = document.querySelector("#menu-link2");
-  
+function closeMobileMenu() {
+  mobileMenu.classList.replace("translate-x-0", "translate-x-full");
+  mobileMenuOverlay.classList.add("hidden");
+  document.body.classList.remove("overflow-hidden");
+  menuBtn.classList.replace("ri-close-line", "ri-menu-line");
+}
+
 menuBtn.addEventListener("click", () => {
-  menuLinks.classList.toggle("hidden");
-  menuBtn.classList.remove("ri-menu-line");
-  menuBtn.classList.add("ri-close-line");
-}); */
+  mobileMenu.classList.contains("translate-x-full")
+    ? openMobileMenu()
+    : closeMobileMenu();
+});
+
+mobileMenuOverlay.addEventListener("click", closeMobileMenu);
+menuLinks.forEach(link => link.addEventListener("click", closeMobileMenu));
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 1024) closeMobileMenu();
+});
