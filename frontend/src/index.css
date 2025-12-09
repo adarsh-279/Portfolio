@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: calistoga;
+    src: url('./assets/fonts/097a874ebc292602-s.p.ttf');
+}
+
+@font-face {
+    font-family: inter;
+    src: url('./assets/fonts/e4af272ccee01ff0-s.p.ttf');
+}
