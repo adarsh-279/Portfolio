@@ -5,7 +5,9 @@ import img2 from '../assets/images/img2.jpg'
 import img3 from '../assets/images/img3.jpg'
 import Work from "./Work";
 import Education from "./Education";
-
+import { Link } from 'react-router-dom'
+import project1 from '../assets/images/project1.png'
+import project2 from '../assets/images/project2.png'
 
 const Home = () => {
 
@@ -81,11 +83,57 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="w-[50%] mx-auto mt-5">
+                <div className="w-[50%] mx-auto mt-2">
                     {activeTab === "education" ? <Education /> : <Work />}
                 </div>
 
-                
+                <div className='w-[50%] mx-auto pt-20 flex flex-col'>
+                    <div className="w-full flex items-center justify-between mb-10">
+                        <h1 className='text-4xl text-balance font-[calistoga] pb-4'>featured projects</h1>
+                        <Link className="opacity-60 hover:opacity-100 transition ease-in-out duration-200" to='/projects'>view more projects <i className="ri-arrow-right-line"></i></Link>
+                    </div>
+                    <div className="w-full gap-5 flex items-center justify-between">
+                        <div className="h-[67vh] border rounded-xl border-[#1F2937]">
+                            <div className="p-8">
+                                <img className="rounded-xl" src={project1} alt="" />
+                                <h1 className="pt-5">Uber Clone (under development)</h1>
+                                <h1 className=" pt-2 text-xs opacity-60">Your personal ride companion for fast, safe, and comfortable journeys.</h1>
+                                <div className="pt-5 flex flex-wrap gap-1">
+                                    <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">React.js</h1>
+                                    <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">Node.js</h1>
+                                    <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">Express.js</h1>
+                                    <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">MongoDB</h1>
+                                    <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">JWT</h1>
+                                    <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">TailwindCSS</h1>
+                                </div>
+                                <div className="pt-5 flex gap-1 text-black">
+                                    <a className="text-xs px-2 py-1 bg-white rounded-md hover:bg-[#ffffff92] transition ease-in-out duration-200" href="https://github.com/adarsh-279/Uber---Clone"><i className="ri-github-line pr-2"></i>Source</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="h-[67vh] border rounded-xl border-[#1F2937]">
+                            <div className="p-8">
+                                <img className="rounded-xl" src={project2} alt="" />
+                                <h1 className="pt-6">Reelish</h1>
+                                <h1 className=" pt-3 text-xs opacity-60">Where Food Meets Reels.</h1>
+                                <div className="pt-6 flex flex-wrap gap-1">
+                                    <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">React.js</h1>
+                                    <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">Node.js</h1>
+                                    <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">Express.js</h1>
+                                    <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">MongoDB</h1>
+                                    <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">JWT</h1>
+                                    <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">TailwindCSS</h1>
+                                    <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">ImageKit</h1>
+                                </div>
+                                <div className="pt-6 flex gap-1 text-black">
+                                    <a className="text-xs px-2 py-1 bg-white rounded-md hover:bg-[#ffffff92] transition ease-in-out duration-200" href="https://github.com/adarsh-279/Reelish"><i className="ri-github-line pr-2"></i>Source</a>
+                                    <a className="text-xs px-2 py-1 bg-white rounded-md hover:bg-[#ffffff92] transition ease-in-out duration-200" href="https://reelish.vercel.app/"><i className="ri-global-line pr-2"></i>Website</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </>
     );
