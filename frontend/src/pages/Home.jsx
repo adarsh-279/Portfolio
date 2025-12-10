@@ -14,7 +14,7 @@ const Home = () => {
     return (
         <>
             <Navbar/>
-            <div className="bg-[#030712] opacity-100 w-full min-h-screen p-5 pt-15 text-white">
+            <div className="bg-[#030712] opacity-100 w-full min-h-screen p-5 pt-15 text-white font-[inter]">
                 <div className='w-[50%] mx-auto pt-15 flex flex-col'>
                     <div className='w-full h-80 flex items-center justify-between'>
                         <div className='w-[55%] h-full flex flex-col gap-10'>
