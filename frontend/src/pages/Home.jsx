@@ -88,7 +88,7 @@ const Home = () => {
                 </div>
 
                 <div className='w-[50%] mx-auto pt-20 flex flex-col'>
-                    <div className="w-full flex items-center justify-between mb-10">
+                    <div className="w-full flex items-center justify-between mb-5">
                         <h1 className='text-4xl text-balance font-[calistoga] pb-4'>featured projects</h1>
                         <Link className="opacity-60 hover:opacity-100 transition ease-in-out duration-200" to='/projects'>view more projects <i className="ri-arrow-right-line"></i></Link>
                     </div>
@@ -131,6 +131,17 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div className='w-[50%] mx-auto pt-15 flex flex-col mb-10'>
+                    <h1 className='text-4xl text-balance font-[calistoga] pb-5'>contributions.</h1>
+                    <div className="w-full mx-auto my-5">
+                        <img
+                            src="https://ghchart.rshah.org/adarsh-279"
+                            alt="GitHub Contributions"
+                            className="w-full p-5 border border-[#1f2937] rounded-xl"
+                        />
                     </div>
                 </div>
 
