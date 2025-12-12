@@ -1,133 +1,212 @@
-import React from 'react'
-import Navbar from '../components/Navbar';
+import React from "react";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+
 import project1 from "../assets/images/project1.png";
 import project2 from "../assets/images/project2.png";
 import project3 from "../assets/images/project3.png";
 import project4 from "../assets/images/project4.png";
 import project5 from "../assets/images/project5.png";
 import project6 from "../assets/images/project6.png";
-import Footer from '../components/Footer';
+
+const projectsData = [
+    {
+        id: 1,
+        title: "Uber Clone (under development)",
+        description:"Your personal ride companion for fast, safe, and comfortable journeys.",
+        image: project1,
+        technologies: [
+            "React.js",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "JWT",
+            "TailwindCSS",
+        ],
+        links: [
+        {
+            type: "Source",
+            url: "https://github.com/adarsh-279/Uber---Clone",
+            icon: "ri-github-line",
+        },
+        ],
+        padding: { title: "pt-5", desc: "pt-2", tech: "pt-5", links: "pt-5" },
+    },
+    {
+        id: 2,
+        title: "Reelish",
+        description: "Where Food Meets Reels.",
+        image: project2,
+        technologies: [
+            "React.js",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "JWT",
+            "TailwindCSS",
+            "ImageKit",
+        ],
+        links: [
+        {
+            type: "Source",
+            url: "https://github.com/adarsh-279/Reelish",
+            icon: "ri-github-line",
+        },
+        {
+            type: "Website",
+            url: "https://reelish.vercel.app/",
+            icon: "ri-global-line",
+        },
+        ],
+        padding: { title: "pt-6", desc: "pt-3", tech: "pt-6", links: "pt-6" },
+    },
+    {
+        id: 3,
+        title: "Minify",
+        description: "URL Shortener.",
+        image: project3,
+        technologies: [
+            "React.js",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "JWT",
+            "TailwindCSS",
+        ],
+        links: [
+        {
+            type: "Source",
+            url: "https://github.com/adarsh-279/Minify",
+            icon: "ri-github-line",
+        },
+        {
+            type: "Website",
+            url: "https://minify-seven.vercel.app/",
+            icon: "ri-global-line",
+        },
+        ],
+        padding: { title: "pt-6", desc: "pt-3", tech: "pt-6", links: "pt-6" },
+    },
+    {
+        id: 4,
+        title: "Plantory",
+        description: "Helping Gardens Speak, One Story at a Time.",
+        image: project4,
+        technologies: ["React.js", "Locomotive", "Framer Motion", "TailwindCSS"],
+        links: [
+        {
+            type: "Source",
+            url: "https://github.com/adarsh-279/Plantory",
+            icon: "ri-github-line",
+        },
+        {
+            type: "Website",
+            url: "https://plantory-five.vercel.app/",
+            icon: "ri-global-line",
+        },
+        ],
+        padding: { title: "pt-6", desc: "pt-3", tech: "pt-6", links: "pt-6" },
+    },
+    {
+        id: 5,
+        title: "Cinemate",
+        description:"Your gateway to trending movies and TV shows around the world.",
+        image: project5,
+        technologies: ["React.js", "TailwindCSS", "TMDB API"],
+        links: [
+        {
+            type: "Source",
+            url: "https://github.com/adarsh-279/Cinemate",
+            icon: "ri-github-line",
+        },
+        {
+            type: "Website",
+            url: "https://cinemate-self.vercel.app/",
+            icon: "ri-global-line",
+        },
+        ],
+        padding: { title: "pt-6", desc: "pt-3", tech: "pt-6", links: "pt-6" },
+    },
+    {
+        id: 6,
+        title: "Enhancia",
+        description: "AI Image Enhancer.",
+        image: project6,
+        technologies: ["React.js", "TailwindCSS", "PicWish API"],
+        links: [
+        {
+            type: "Source",
+            url: "https://github.com/adarsh-279/Enhancia",
+            icon: "ri-github-line",
+        },
+        {
+            type: "Website",
+            url: "https://enhancia-beryl.vercel.app/",
+            icon: "ri-global-line",
+        },
+        ],
+        padding: { title: "pt-6", desc: "pt-3", tech: "pt-6", links: "pt-6" },
+    },
+];
 
 const Projects = () => {
     return (
         <>
             <Navbar />
-            <div className="bg-[#030712] opacity-100 w-full min-h-screen p-5 pt-15 text-white font-[inter]">
+            <div className="dark:bg-[#030712] opacity-100 w-full min-h-screen p-5 pt-15 dark:text-white font-[inter]">
                 <h1 className="w-[50%] mx-auto pt-20 text-5xl text-balance font-[calistoga]">my projects.</h1>
-                <div className="w-[50%] mx-auto pt-10 gap-5 grid grid-cols-2 items-center justify-between">
-                    <div className="h-[67vh] border rounded-xl border-[#1F2937]">
-                        <div className="p-8">
-                            <img className="rounded-xl" src={project1} alt="" />
-                            <h1 className="pt-5">Uber Clone (under development)</h1>
-                            <h1 className=" pt-2 text-xs opacity-60">Your personal ride companion for fast, safe, and comfortable journeys.</h1>
-                            <div className="pt-5 flex flex-wrap gap-1">
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">React.js</h1>
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">Node.js</h1>
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">Express.js</h1>
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">MongoDB</h1>
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">JWT</h1>
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">TailwindCSS</h1>
-                            </div>
-                            <div className="pt-5 flex gap-1 text-black">
-                                <a className="text-xs px-2 py-1 bg-white rounded-md hover:bg-[#ffffff92] transition ease-in-out duration-200" href="https://github.com/adarsh-279/Uber---Clone"><i className="ri-github-line pr-2"></i>Source</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="h-[67vh] border rounded-xl border-[#1F2937]">
-                        <div className="p-8">
-                            <img className="rounded-xl" src={project2} alt="" />
-                            <h1 className="pt-6">Reelish</h1>
-                            <h1 className=" pt-3 text-xs opacity-60">Where Food Meets Reels.</h1>
-                            <div className="pt-6 flex flex-wrap gap-1">
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">React.js</h1>
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">Node.js</h1>
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">Express.js</h1>
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">MongoDB</h1>
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">JWT</h1>
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">TailwindCSS</h1>
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">ImageKit</h1>
-                            </div>
-                            <div className="pt-6 flex gap-1 text-black">
-                                <a className="text-xs px-2 py-1 bg-white rounded-md hover:bg-[#ffffff92] transition ease-in-out duration-200" href="https://github.com/adarsh-279/Reelish"><i className="ri-github-line pr-2"></i>Source</a>
-                                <a className="text-xs px-2 py-1 bg-white rounded-md hover:bg-[#ffffff92] transition ease-in-out duration-200" href="https://reelish.vercel.app/"><i className="ri-global-line pr-2"></i>Website</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="h-[67vh] border rounded-xl border-[#1F2937]">
-                        <div className="p-8">
-                            <img className="rounded-xl" src={project3} alt="" />
-                            <h1 className="pt-6">Minify</h1>
-                            <h1 className=" pt-3 text-xs opacity-60">URL Shortener.</h1>
-                            <div className="pt-6 flex flex-wrap gap-1">
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">React.js</h1>
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">Node.js</h1>
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">Express.js</h1>
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">MongoDB</h1>
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">JWT</h1>
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">TailwindCSS</h1>
-                            </div>
-                            <div className="pt-6 flex gap-1 text-black">
-                                <a className="text-xs px-2 py-1 bg-white rounded-md hover:bg-[#ffffff92] transition ease-in-out duration-200" href="https://github.com/adarsh-279/Minify"><i className="ri-github-line pr-2"></i>Source</a>
-                                <a className="text-xs px-2 py-1 bg-white rounded-md hover:bg-[#ffffff92] transition ease-in-out duration-200" href="https://minify-seven.vercel.app/"><i className="ri-global-line pr-2"></i>Website</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="h-[67vh] border rounded-xl border-[#1F2937]">
-                        <div className="p-8">
-                            <img className="rounded-xl" src={project4} alt="" />
-                            <h1 className="pt-6">Plantory</h1>
-                            <h1 className=" pt-3 text-xs opacity-60">Helping Gardens Speak, One Story at a Time.</h1>
-                            <div className="pt-6 flex flex-wrap gap-1">
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">React.js</h1>
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">Locomotive</h1>
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">Framer Motion</h1>
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">TailwindCSS</h1>
-                            </div>
-                            <div className="pt-6 flex gap-1 text-black">
-                                <a className="text-xs px-2 py-1 bg-white rounded-md hover:bg-[#ffffff92] transition ease-in-out duration-200" href="https://github.com/adarsh-279/Plantory"><i className="ri-github-line pr-2"></i>Source</a>
-                                <a className="text-xs px-2 py-1 bg-white rounded-md hover:bg-[#ffffff92] transition ease-in-out duration-200" href="https://plantory-five.vercel.app/"><i className="ri-global-line pr-2"></i>Website</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="h-[67vh] border rounded-xl border-[#1F2937]">
-                        <div className="p-8">
-                            <img className="rounded-xl" src={project5} alt="" />
-                            <h1 className="pt-6">Cinemate</h1>
-                            <h1 className=" pt-3 text-xs opacity-60">Your gateway to trending movies and TV shows around the world.</h1>
-                            <div className="pt-6 flex flex-wrap gap-1">
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">React.js</h1>
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">TailwindCSS</h1>
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">TMDB API</h1>
-                            </div>
-                            <div className="pt-6 flex gap-1 text-black">
-                                <a className="text-xs px-2 py-1 bg-white rounded-md hover:bg-[#ffffff92] transition ease-in-out duration-200" href="https://github.com/adarsh-279/Cinemate"><i className="ri-github-line pr-2"></i>Source</a>
-                                <a className="text-xs px-2 py-1 bg-white rounded-md hover:bg-[#ffffff92] transition ease-in-out duration-200" href="https://cinemate-self.vercel.app/"><i className="ri-global-line pr-2"></i>Website</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="h-[67vh] border rounded-xl border-[#1F2937]">
-                        <div className="p-8">
-                            <img className="rounded-xl" src={project6} alt="" />
-                            <h1 className="pt-6">Enhancia</h1>
-                            <h1 className=" pt-3 text-xs opacity-60">AI Image Enhancer.</h1>
-                            <div className="pt-6 flex flex-wrap gap-1">
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">React.js</h1>
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">TailwindCSS</h1>
-                                <h1 className="text-xs p-1 bg-[#1F2937] rounded-md">PicWish API</h1>
-                            </div>
-                            <div className="pt-6 flex gap-1 text-black">
-                                <a className="text-xs px-2 py-1 bg-white rounded-md hover:bg-[#ffffff92] transition ease-in-out duration-200" href="https://github.com/adarsh-279/Enhancia"><i className="ri-github-line pr-2"></i>Source</a>
-                                <a className="text-xs px-2 py-1 bg-white rounded-md hover:bg-[#ffffff92] transition ease-in-out duration-200" href="https://enhancia-beryl.vercel.app/"><i className="ri-global-line pr-2"></i>Website</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="w-full pt-10">
-                    <Footer />
-                </div>
-            </div>
-        </>
-    );
-}
 
-export default Projects
+            <div className="w-[50%] mx-auto pt-10 gap-5 grid grid-cols-2 items-center justify-between">
+                {projectsData.map((project) => (
+                    <div
+                        key={project.id}
+                        className="h-[67vh] border rounded-xl border-[#7a7a7a52] dark:border-[#1F2937]"
+                    >
+                    <div className="p-8">
+                        <img
+                            className="rounded-xl"
+                            src={project.image}
+                            alt={project.title}
+                        />
+                        <h1 className={project.padding.title}>{project.title}</h1>
+                        <h1 className={`${project.padding.desc} text-xs opacity-60`}>{project.description}</h1>
+
+                        <div className={`${project.padding.tech} flex flex-wrap gap-1`}>
+                            {project.technologies.map((tech, idx) => (
+                                <h1
+                                    key={idx}
+                                    className="text-xs p-1 bg-[#F3F4F6] dark:bg-[#1F2937] rounded-md"
+                                >
+                                    {tech}
+                                </h1>
+                                ))}
+                        </div>
+
+                        <div
+                            className={`${project.padding.links} flex gap-1 text-white dark:text-black`}
+                        >
+                            {project.links.map((link, idx) => (
+                                <a
+                                    key={idx}
+                                    className="text-xs px-2 py-1 bg-[#1F2937] dark:bg-white rounded-md hover:bg-[#1f2937e6] dark:hover:bg-[#ffffff92] transition ease-in-out duration-200"
+                                    href={link.url}
+                                >
+                                    <i className={`${link.icon} pr-2`}></i>
+                                    {link.type}
+                                </a>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+                ))}
+            </div>
+
+            <div className="w-full pt-10">
+                <Footer />
+            </div>
+        </div>
+    </>
+    );
+};
+
+export default Projects;

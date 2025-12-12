@@ -28,7 +28,7 @@ const ContactForm = () => {
   return (
     <>
       <Navbar />
-      <div className="bg-[#030712] opacity-100 w-full min-h-screen p-5 pt-15 text-white font-[inter]">
+      <div className="dark:bg-[#030712] opacity-100 w-full min-h-screen p-5 pt-15 dark:text-white font-[inter]">
         <div className="w-full mx-auto">
           <div className="w-[50%] mx-auto pt-20">
             <h1 className="text-5xl text-balance font-[calistoga] pb-6">
@@ -41,7 +41,7 @@ const ContactForm = () => {
               <div className="flex gap-3">
                 <input
                   type="text"
-                  className="w-full px-3 py-2 border border-[#1f2937] rounded-md"
+                  className="w-full px-3 py-2 border border-[#7a7a7a52] dark:border-[#1f2937] rounded-md"
                   placeholder="Name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
@@ -49,7 +49,7 @@ const ContactForm = () => {
                 />
                 <input
                   type="email"
-                  className="w-full px-3 py-2 border border-[#1f2937] rounded-md"
+                  className="w-full px-3 py-2 border border-[#7a7a7a52] dark:border-[#1f2937] rounded-md"
                   placeholder="Your Email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -57,8 +57,8 @@ const ContactForm = () => {
                 />
               </div>
               <textarea
-                className="w-full p-3 border border-[#1f2937] rounded-md h-32 resize-none mb-6"
-                placeholder="Leave feedback about the site, career opportunities or just to say hello etc."
+                className="w-full p-3 border border-[#7a7a7a52] dark:border-[#1f2937] rounded-md h-32 resize-none mb-6"
+                placeholder="Leave feedback about the site, career opportunities or just to say hello."
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 required
@@ -66,7 +66,7 @@ const ContactForm = () => {
 
               <button
                 type="submit"
-                className="w-full text-black bg-white py-2 rounded-md hover:bg-[#ffffff92] transition ease-in-out duration-200"
+                className="w-full text-white dark:text-black bg-[#1f2937] dark:bg-white py-2 rounded-md hover:bg-[#1f2937e6] dark:hover:bg-[#ffffff92] transition ease-in-out duration-200"
               >
                 {loading ? (
                   "Sending..."
