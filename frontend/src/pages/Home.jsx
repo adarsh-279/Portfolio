@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom'
 import project1 from '../assets/images/project1.png'
 import project2 from '../assets/images/project2.png'
 import Footer from "../components/Footer";
+import { motion } from "framer-motion";
 
 const Home = () => {
 
@@ -22,7 +23,9 @@ const Home = () => {
                     <div className='w-full h-80 flex items-center justify-between'>
                         <div className='w-[55%] h-full flex flex-col gap-10'>
                             <div className='w-full'>
-                                <h1 className='text-5xl text-balance font-[calistoga] pb-4'>hi adarsh here. <span>👋</span></h1>
+                                <h1 className='text-5xl text-balance font-[calistoga] pb-4'>hi adarsh here. <motion.span whileHover={{ rotate: [0, 25, -15, 25, 0] }}
+                                    transition={{ duration: 1, ease: "easeInOut" }}
+                                    style={{ display: "inline-block", cursor: "pointer" }}>👋</motion.span></h1>
                                 <h1 className='text-lg font-[inter]'>19 yo from Kolkata, India</h1>
                                 <h1 className='pt-5 font-[inter]'>Backend by strength, full-stack <br /> by curiosity.</h1>
                                 <h1 className='pt-5 font-[inter]'>Building scalable web apps and <br /> exploring AI integration.</h1>
