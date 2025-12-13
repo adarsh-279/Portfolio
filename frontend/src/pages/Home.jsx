@@ -18,17 +18,17 @@ const Home = () => {
     return (
         <>
             <Navbar/>
-            <div className="bg-white dark:bg-[#030712] opacity-100 w-full min-h-screen p-5 pt-15 text-black dark:text-white font-[inter]">
-                <div className='w-[50%] mx-auto pt-15 flex flex-col'>
-                    <div className='w-full h-80 flex items-center justify-between'>
-                        <div className='w-[55%] h-full flex flex-col gap-10'>
+            <div className="bg-white dark:bg-[#030712] opacity-100 w-full min-h-screen p-5 pt-15 text-black dark:text-white font-[inter] overflow-x-hidden">
+                <div className='w-full md:w-[90%] lg:w-[70%] xl:w-[50%] mx-auto pt-16 flex flex-col'>
+                    <div className='w-full h-80 flex flex-col md:flex-row items-center justify-between'>
+                        <div className='w-full xl:w-[55%] h-full flex flex-col gap-10'>
                             <div className='w-full'>
-                                <h1 className='text-5xl text-balance font-[calistoga] pb-4'>hi adarsh here. <motion.span whileHover={{ rotate: [0, 25, -15, 25, 0] }}
+                                <h1 className='text-4xl md:text-5xl text-balance font-[calistoga] pb-4'>hi adarsh here. <motion.span whileHover={{ rotate: [0, 25, -15, 25, 0] }}
                                     transition={{ duration: 1, ease: "easeInOut" }}
                                     style={{ display: "inline-block", cursor: "pointer" }}>👋</motion.span></h1>
-                                <h1 className='text-lg font-[inter]'>19 yo from Kolkata, India</h1>
-                                <h1 className='pt-5 font-[inter]'>Backend by strength, full-stack <br /> by curiosity.</h1>
-                                <h1 className='pt-5 font-[inter]'>Building scalable web apps and <br /> exploring AI integration.</h1>
+                                <h1 className='text-sm md:text-lg font-[inter]'>19 yo from Kolkata, India</h1>
+                                <h1 className='text-sm md:text-lg pt-5 font-[inter]'>Backend by strength, full-stack <br /> by curiosity.</h1>
+                                <h1 className='text-sm md:text-lg pt-5 font-[inter]'>Building scalable web apps and <br /> exploring AI integration.</h1>
                             </div>
                             <div className='flex items-center gap-5'>
                                 <a className='px-4 py-2 border border-[#E5E7EB] dark:border-[#1F2937] rounded-lg hover:bg-[#e5e7eb72] dark:hover:bg-[#1F2937] transition ease-in-out duration-200' href="https://drive.google.com/file/d/1zf6mnGoLv1gV0zGM1WcJD5kqo2kHmaeb/view?usp=sharing">Resume <i className="ri-file-line"></i></a>
@@ -37,7 +37,7 @@ const Home = () => {
                                 <a className='text-xl opacity-60 hover:opacity-100 transition ease-in-out duration-200' href="https://mail.google.com/mail/?view=cm&fs=1&to=shawadarsh279@gmail.com"><i className="ri-mail-line"></i></a>
                             </div>
                         </div>
-                        <div className='w-[45%] pr-5 h-full relative flex items-center justify-end'>
+                        <div className='w-full md:w-[45%] md:pr-5 h-full pt-40 md:pt-0 relative flex items-center justify-center md:justify-end'>
                             <img className='absolute w-45 rounded-lg rotate-8' src={img1} alt="" />
                             <img className='absolute w-45 rounded-lg -rotate-8' src={img2} alt="" />
                             <img className='absolute w-45 rounded-lg' src={img3} alt="" />

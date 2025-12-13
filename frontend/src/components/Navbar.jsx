@@ -19,9 +19,9 @@ const Navbar = () => {
 
 
     return (
-        <div className='fixed top-0 left-0 z-50 w-full p-6 dark:bg-[#0307128f] bg-[#ffffff1a] backdrop-blur-sm'>
-            <div className='w-[50%] mx-auto flex items-center justify-between'>
-                <div className='w-[40%] flex items-center justify-start gap-10 text-black dark:text-white'>
+        <div className='fixed top-0 left-0 z-50 w-full p-6 dark:bg-[#0307128f] bg-[#ffffff1a] backdrop-blur-sm overflow-x-hidden'>
+            <div className='w-full sm:w-[90%] lg:w-[70%] xl:w-[50%] mx-auto flex items-center justify-between'>
+                <div className='w-[80%] xl:w-[40%] flex items-center justify-start gap-8 md:gap-10 lg:gap-10 text-black dark:text-white'>
                     <Link className='opacity-60 hover:opacity-100 transition ease-in-out duration-200' to='/'>home</Link>
                     <Link className='opacity-60 hover:opacity-100 transition ease-in-out duration-200' to='/projects'>projects</Link>
                     <Link className='opacity-60 hover:opacity-100 transition ease-in-out duration-200' to='/contact'>contact</Link>
