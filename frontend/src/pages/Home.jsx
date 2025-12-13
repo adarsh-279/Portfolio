@@ -36,7 +36,7 @@ const Home = () => {
                                 <a className='text-xl opacity-60 hover:opacity-100 transition ease-in-out duration-200' href="https://www.linkedin.com/in/adarsh-shaw279/"><i className="ri-linkedin-line"></i></a>
                                 <a className='text-xl opacity-60 hover:opacity-100 transition ease-in-out duration-200' href="https://github.com/adarsh-279"><i className="ri-github-line"></i></a>
                                 <a className='text-xl opacity-60 hover:opacity-100 transition ease-in-out duration-200' href="https://x.com/Adarsh_Shaw27"><i className="ri-twitter-x-line"></i></a>
-                                <a className='text-xl opacity-60 hover:opacity-100 transition ease-in-out duration-200' href="https://mail.google.com/mail/?view=cm&fs=1&to=shawadarsh279@gmail.com"><i className="ri-mail-line"></i></a>
+                                <a className='text-xl opacity-60 hover:opacity-100 transition ease-in-out duration-200' href="mailto:shawadarsh279@gmail.com"><i className="ri-mail-line"></i></a>
                             </div>
                         </div>
                         <div className='w-full md:w-[45%] md:pr-5 h-full pt-40 md:pt-0 relative flex items-center justify-center md:justify-end'>
