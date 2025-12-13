@@ -1,13 +1,12 @@
-import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-import project1 from "../assets/images/project1.png";
-import project2 from "../assets/images/project2.png";
-import project3 from "../assets/images/project3.png";
-import project4 from "../assets/images/project4.png";
-import project5 from "../assets/images/project5.png";
-import project6 from "../assets/images/project6.png";
+import project1 from "../assets/images/project1.webp";
+import project2 from "../assets/images/project2.webp";
+import project3 from "../assets/images/project3.webp";
+import project4 from "../assets/images/project4.webp";
+import project5 from "../assets/images/project5.webp";
+import project6 from "../assets/images/project6.webp";
 
 const projectsData = [
     {
@@ -154,13 +153,13 @@ const Projects = () => {
         <>
             <Navbar />
             <div className="dark:bg-[#030712] opacity-100 w-full min-h-screen p-5 pt-15 dark:text-white font-[inter]">
-                <h1 className="w-[50%] mx-auto pt-20 text-5xl text-balance font-[calistoga]">my projects.</h1>
+                <h1 className="w-full md:w-[90%] lg:w-[70%] xl:w-[50%] mx-auto pt-20 text-4xl md:text-5xl text-balance font-[calistoga]">my projects.</h1>
 
-            <div className="w-[50%] mx-auto pt-10 gap-5 grid grid-cols-2 items-center justify-between">
+            <div className="w-full md:w-[90%] lg:w-[70%] xl:w-[50%] mx-auto pt-10 gap-5 grid md:grid-cols-2 items-center justify-between">
                 {projectsData.map((project) => (
                     <div
                         key={project.id}
-                        className="h-[67vh] border rounded-xl border-[#7a7a7a52] dark:border-[#1F2937]"
+                        className="h-[56vh] md:h-[45vh] lg:h-[35vh] xl:h-[38vh] 2xl:h-[67vh] border rounded-xl border-[#7a7a7a52] dark:border-[#1F2937]"
                     >
                     <div className="p-8">
                         <img

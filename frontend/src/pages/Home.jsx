@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import Navbar from '../components/Navbar';
-import img1 from '../assets/images/img1.jpg'
-import img2 from '../assets/images/img2.jpg'
-import img3 from '../assets/images/img3.jpg'
+import img1 from '../assets/images/img1.webp'
+import img2 from '../assets/images/img2.webp'
+import img3 from '../assets/images/img3.webp'
 import Work from "./Work";
 import Education from "./Education";
 import { Link } from 'react-router-dom'
-import project1 from '../assets/images/project1.png'
-import project2 from '../assets/images/project2.png'
+import project1 from '../assets/images/project1.webp'
+import project2 from '../assets/images/project2.webp'
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 
@@ -35,13 +35,14 @@ const Home = () => {
                                 <a className='px-4 py-2 border border-[#E5E7EB] dark:border-[#1F2937] rounded-lg hover:bg-[#e5e7eb72] dark:hover:bg-[#1F2937] transition ease-in-out duration-200' href="https://drive.google.com/file/d/1zf6mnGoLv1gV0zGM1WcJD5kqo2kHmaeb/view?usp=sharing">Resume <i className="ri-file-line"></i></a>
                                 <a className='text-xl opacity-60 hover:opacity-100 transition ease-in-out duration-200' href="https://www.linkedin.com/in/adarsh-shaw279/"><i className="ri-linkedin-line"></i></a>
                                 <a className='text-xl opacity-60 hover:opacity-100 transition ease-in-out duration-200' href="https://github.com/adarsh-279"><i className="ri-github-line"></i></a>
+                                <a className='text-xl opacity-60 hover:opacity-100 transition ease-in-out duration-200' href="https://x.com/Adarsh_Shaw27"><i className="ri-twitter-x-line"></i></a>
                                 <a className='text-xl opacity-60 hover:opacity-100 transition ease-in-out duration-200' href="https://mail.google.com/mail/?view=cm&fs=1&to=shawadarsh279@gmail.com"><i className="ri-mail-line"></i></a>
                             </div>
                         </div>
                         <div className='w-full md:w-[45%] md:pr-5 h-full pt-40 md:pt-0 relative flex items-center justify-center md:justify-end'>
-                            <img className='absolute w-45 rounded-lg rotate-8' src={img1} alt="" />
-                            <img className='absolute w-45 rounded-lg -rotate-8' src={img2} alt="" />
-                            <img className='absolute w-45 rounded-lg' src={img3} alt="" />
+                            <img className='absolute w-45 rounded-lg rotate-8' loading="eager" decoding="async" src={img3} alt="" />
+                            <img className='absolute w-45 rounded-lg -rotate-8' loading="eager" decoding="async" src={img2} alt="" />
+                            <img className='absolute w-45 rounded-lg' fetchPriority="high"  decoding="async" src={img1} alt="" />
                         </div>
                     </div>
                 </div>
@@ -90,7 +91,8 @@ const Home = () => {
                 </div>
 
                 <div className="w-full md:w-[90%] lg:w-[70%] xl:w-[50%] mx-auto mt-2">
-                    {activeTab === "education" ? <Education /> : <Work />}
+                    {activeTab === "education" && <Education />}
+                    {activeTab === "work" && <Work />}
                 </div>
 
                 {/* Part 3 */}
@@ -102,7 +104,7 @@ const Home = () => {
                     <div className="w-full gap-5 flex flex-col md:flex-row items-center justify-between">
                         <div className="h-[56vh] md:h-[45vh] lg:h-[35vh] xl:h-[38vh] 2xl:h-[67vh] w-full md:w-[50%] border-2 rounded-xl border-[#7a7a7a52] dark:border-[#1F2937]">
                             <div className="p-8">
-                                <img className="rounded-xl" src={project1} alt="" />
+                                <img className="rounded-xl" loading="lazy" decoding="async" src={project1} alt="" />
                                 <h1 className="pt-5">Uber Clone (under development)</h1>
                                 <h1 className=" pt-2 text-xs opacity-60">Your personal ride companion for fast, safe, and comfortable journeys.</h1>
                                 <div className="pt-5 flex flex-wrap gap-1 dark:text-white">
@@ -120,7 +122,7 @@ const Home = () => {
                         </div>
                         <div className="h-[56vh] md:h-[45vh] lg:h-[35vh] xl:h-[38vh] 2xl:h-[67vh] w-full md:w-[50%] border-2 rounded-xl border-[#7a7a7a52] dark:border-[#1F2937]">
                             <div className="p-8">
-                                <img className="rounded-xl" src={project2} alt="" />
+                                <img className="rounded-xl" loading="lazy" decoding="async" src={project2} alt="" />
                                 <h1 className="pt-6">Reelish</h1>
                                 <h1 className=" pt-3 text-xs opacity-60">Where Food Meets Reels.</h1>
                                 <div className="pt-6 flex flex-wrap gap-1 dark:text-white">
@@ -144,7 +146,7 @@ const Home = () => {
                 <div className='w-full md:w-[90%] lg:w-[70%] xl:w-[50%] mx-auto pt-15 flex flex-col mb-10'>
                     <h1 className='text-4xl text-balance font-[calistoga] pb-5'>contributions.</h1>
                     <div className="w-full mx-auto my-2 md:my-5">
-                        <img
+                        <img loading="lazy" decoding="async"
                             src="https://ghchart.rshah.org/adarsh-279"
                             alt="GitHub Contributions"
                             className="w-full p-2 md:p-5 border-2 border-[#7a7a7a52] dark:border-[#1f2937] rounded-xl"
