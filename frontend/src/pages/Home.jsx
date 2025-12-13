@@ -93,13 +93,14 @@ const Home = () => {
                     {activeTab === "education" ? <Education /> : <Work />}
                 </div>
 
-                <div className='w-[50%] mx-auto pt-20 flex flex-col'>
+                {/* Part 3 */}
+                <div className='w-full md:w-[90%] lg:w-[70%] xl:w-[50%] mx-auto pt-20 flex flex-col'>
                     <div className="w-full flex items-center justify-between mb-5">
-                        <h1 className='text-4xl text-balance font-[calistoga] pb-4'>featured projects</h1>
-                        <Link className="opacity-60 hover:opacity-100 transition ease-in-out duration-200" to='/projects'>view more projects <i className="ri-arrow-right-line"></i></Link>
+                        <h1 className='text-3xl md:text-4xl text-balance font-[calistoga] pb-4'>featured projects</h1>
+                        <Link className="text-sm opacity-60 hover:opacity-100 transition ease-in-out duration-200" to='/projects'>view more <i className="ri-arrow-right-line"></i></Link>
                     </div>
-                    <div className="w-full gap-5 flex items-center justify-between">
-                        <div className="h-[67vh] border-2 rounded-xl border-[#7a7a7a52] dark:border-[#1F2937]">
+                    <div className="w-full gap-5 flex flex-col md:flex-row items-center justify-between">
+                        <div className="h-[56vh] md:h-[45vh] lg:h-[35vh] xl:h-[38vh] 2xl:h-[67vh] w-full md:w-[50%] border-2 rounded-xl border-[#7a7a7a52] dark:border-[#1F2937]">
                             <div className="p-8">
                                 <img className="rounded-xl" src={project1} alt="" />
                                 <h1 className="pt-5">Uber Clone (under development)</h1>
@@ -117,7 +118,7 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="h-[67vh] border-2 rounded-xl border-[#7a7a7a52] dark:border-[#1F2937]">
+                        <div className="h-[56vh] md:h-[45vh] lg:h-[35vh] xl:h-[38vh] 2xl:h-[67vh] w-full md:w-[50%] border-2 rounded-xl border-[#7a7a7a52] dark:border-[#1F2937]">
                             <div className="p-8">
                                 <img className="rounded-xl" src={project2} alt="" />
                                 <h1 className="pt-6">Reelish</h1>
@@ -140,13 +141,13 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className='w-[50%] mx-auto pt-15 flex flex-col mb-10'>
+                <div className='w-full md:w-[90%] lg:w-[70%] xl:w-[50%] mx-auto pt-15 flex flex-col mb-10'>
                     <h1 className='text-4xl text-balance font-[calistoga] pb-5'>contributions.</h1>
-                    <div className="w-full mx-auto my-5">
+                    <div className="w-full mx-auto my-2 md:my-5">
                         <img
                             src="https://ghchart.rshah.org/adarsh-279"
                             alt="GitHub Contributions"
-                            className="w-full p-5 border-2 border-[#7a7a7a52] dark:border-[#1f2937] rounded-xl"
+                            className="w-full p-2 md:p-5 border-2 border-[#7a7a7a52] dark:border-[#1f2937] rounded-xl"
                         />
                     </div>
                 </div>

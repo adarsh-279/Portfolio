@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <div className='w-full bottom-0 left-0 py-5 dark:bg-[#0307128f]'>
-            <div className='w-[50%] mx-auto flex items-center justify-between pt-5 pb-10'>
+            <div className='w-full md:w-[90%] lg:w-[70%] xl:w-[50%] mx-auto flex items-center justify-between pt-5 pb-10'>
                 <h1 className=" pt-2 text-xs opacity-60">Thank you for visiting my portfolio! <br /> I hope you enjoyed exploring my work.</h1>
                 <div className='flex items-center gap-5'>
                     <a className='text-xl opacity-60 hover:opacity-100 transition ease-in-out duration-200' href="https://www.linkedin.com/in/adarsh-shaw279/"><i className="ri-linkedin-line"></i></a>
