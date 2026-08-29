@@ -6,7 +6,7 @@ import img3 from '../assets/images/img3.webp'
 import Work from "./Work";
 import Education from "./Education";
 import { Link } from 'react-router-dom'
-import project1 from '../assets/images/project1.webp'
+import project7 from '../assets/images/project7.webp'
 import project2 from '../assets/images/project2.webp'
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
@@ -27,12 +27,12 @@ const Home = () => {
                                 <h1 className='text-4xl md:text-5xl text-balance font-[calistoga] pb-4'>hi adarsh here. <motion.span whileHover={{ rotate: [0, 25, -15, 25, 0] }}
                                     transition={{ duration: 1, ease: "easeInOut" }}
                                     style={{ display: "inline-block", cursor: "pointer" }}>👋</motion.span></h1>
-                                <h1 className='text-sm md:text-lg font-[inter]'>19 yo from Kolkata, India</h1>
+                                <h1 className='text-sm md:text-lg font-[inter]'>20 yo from Kolkata, India</h1>
                                 <h1 className='text-sm md:text-lg pt-5 font-[inter]'>Backend by strength, full-stack <br /> by curiosity.</h1>
                                 <h1 className='text-sm md:text-lg pt-5 font-[inter]'>Building scalable web apps and <br /> exploring AI integration.</h1>
                             </div>
                             <div className='flex items-center gap-5'>
-                                <a className='px-4 py-2 border border-[#E5E7EB] dark:border-[#1F2937] rounded-lg hover:bg-[#e5e7eb72] dark:hover:bg-[#1F2937] transition ease-in-out duration-200' href="https://drive.google.com/file/d/1ogOpI5arCjYXYGOE-1tyfIxsrCtf173e/view?usp=sharing">Resume <i className="ri-file-line"></i></a>
+                                <a className='px-4 py-2 border border-[#E5E7EB] dark:border-[#1F2937] rounded-lg hover:bg-[#e5e7eb72] dark:hover:bg-[#1F2937] transition ease-in-out duration-200' href="https://drive.google.com/file/d/1r18b5ANxIKugc57coogli7Up5lETxD6Q/view?usp=sharing">Resume <i className="ri-file-line"></i></a>
                                 <a className='text-xl opacity-60 hover:opacity-100 transition ease-in-out duration-200' href="https://www.linkedin.com/in/adarsh-shaw279/"><i className="ri-linkedin-line"></i></a>
                                 <a className='text-xl opacity-60 hover:opacity-100 transition ease-in-out duration-200' href="https://github.com/adarsh-279"><i className="ri-github-line"></i></a>
                                 <a className='text-xl opacity-60 hover:opacity-100 transition ease-in-out duration-200' href="https://x.com/Adarsh_Shaw27"><i className="ri-twitter-x-line"></i></a>
@@ -104,9 +104,9 @@ const Home = () => {
                     <div className="w-full gap-5 flex flex-col md:flex-row items-center justify-between">
                         <div className="h-[56vh] md:h-[45vh] lg:h-[35vh] xl:h-[38vh] 2xl:h-[67vh] w-full md:w-[50%] border-2 rounded-xl border-[#7a7a7a52] dark:border-[#1F2937]">
                             <div className="p-8">
-                                <img className="rounded-xl" loading="lazy" decoding="async" src={project1} alt="" />
-                                <h1 className="pt-5">Uber Clone (under development)</h1>
-                                <h1 className=" pt-2 text-xs opacity-60">Your personal ride companion for fast, safe, and comfortable journeys.</h1>
+                                <img className="rounded-xl" loading="lazy" decoding="async" src={project7} alt="" />
+                                <h1 className="pt-5">HireZen AI</h1>
+                                <h1 className=" pt-2 text-xs opacity-60">AI-powered resume analysis and interview preparation platform.</h1>
                                 <div className="pt-5 flex flex-wrap gap-1 dark:text-white">
                                     <h1 className="text-xs p-1 bg-[#F3F4F6] dark:bg-[#1F2937] rounded-md">React.js</h1>
                                     <h1 className="text-xs p-1 bg-[#F3F4F6] dark:bg-[#1F2937] rounded-md">Node.js</h1>
@@ -114,9 +114,11 @@ const Home = () => {
                                     <h1 className="text-xs p-1 bg-[#F3F4F6] dark:bg-[#1F2937] rounded-md">MongoDB</h1>
                                     <h1 className="text-xs p-1 bg-[#F3F4F6] dark:bg-[#1F2937] rounded-md">JWT</h1>
                                     <h1 className="text-xs p-1 bg-[#F3F4F6] dark:bg-[#1F2937] rounded-md">TailwindCSS</h1>
+                                    <h1 className="text-xs p-1 bg-[#F3F4F6] dark:bg-[#1F2937] rounded-md">Puppeteer</h1>
                                 </div>
                                 <div className="pt-5 flex gap-1 text-white dark:text-black">
-                                    <a className="text-xs px-2 py-1 bg-[#1F2937] dark:bg-white rounded-md hover:bg-[#1f2937e6] dark:hover:bg-[#ffffff92] transition ease-in-out duration-200" href="https://github.com/adarsh-279/Uber---Clone"><i className="ri-github-line pr-2"></i>Source</a>
+                                    <a className="text-xs px-2 py-1 bg-[#1F2937] dark:bg-white rounded-md hover:bg-[#1f2937e6] dark:hover:bg-[#ffffff92] transition ease-in-out duration-200" href="https://github.com/adarsh-279/HireZen-AI"><i className="ri-github-line pr-2"></i>Source</a>
+                                    <a className="text-xs px-2 py-1 bg-[#1F2937] dark:bg-white rounded-md hover:bg-[#1f2937e6] dark:hover:bg-[#ffffff92] transition ease-in-out duration-200" href="https://hirezen-ai.vercel.app/"><i className="ri-global-line pr-2"></i>Website</a>
                                 </div>
                             </div>
                         </div>
