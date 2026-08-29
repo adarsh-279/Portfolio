@@ -7,12 +7,50 @@ import project3 from "../assets/images/project3.webp";
 import project4 from "../assets/images/project4.webp";
 import project5 from "../assets/images/project5.webp";
 import project6 from "../assets/images/project6.webp";
+import project7 from "../assets/images/project7.webp";
 
 const projectsData = [
     {
         id: 1,
+        title: "HireZen AI",
+        description:
+            "AI-powered resume analysis and interview preparation platform.",
+        image: project7,
+        technologies: [
+            "React.js",
+            "Node.js",
+            "Express.js",
+            "MongoDB",
+            "JWT",
+            "Groq AI",
+            "Puppeteer",
+            "TailwindCSS",
+        ],
+        links: [
+            {
+                type: "Source",
+                url: "https://github.com/adarsh-279/HireZen-AI",
+                icon: "ri-github-line",
+            },
+            {
+                type: "Website",
+                url: "https://hirezen-ai.vercel.app/",
+                icon: "ri-global-line",
+            },
+        ],
+        padding: {
+            title: "pt-6",
+            desc: "pt-3",
+            tech: "pt-6",
+            links: "pt-6",
+        },
+    },
+
+    {
+        id: 2,
         title: "Uber Clone (under development)",
-        description:"Your personal ride companion for fast, safe, and comfortable journeys.",
+        description:
+            "Your personal ride companion for fast, safe, and comfortable journeys.",
         image: project1,
         technologies: [
             "React.js",
@@ -23,16 +61,22 @@ const projectsData = [
             "TailwindCSS",
         ],
         links: [
-        {
-            type: "Source",
-            url: "https://github.com/adarsh-279/Uber---Clone",
-            icon: "ri-github-line",
-        },
+            {
+                type: "Source",
+                url: "https://github.com/adarsh-279/Uber---Clone",
+                icon: "ri-github-line",
+            },
         ],
-        padding: { title: "pt-5", desc: "pt-2", tech: "pt-5", links: "pt-5" },
+        padding: {
+            title: "pt-5",
+            desc: "pt-2",
+            tech: "pt-5",
+            links: "pt-5",
+        },
     },
+
     {
-        id: 2,
+        id: 3,
         title: "Reelish",
         description: "Where Food Meets Reels.",
         image: project2,
@@ -46,21 +90,27 @@ const projectsData = [
             "ImageKit",
         ],
         links: [
-        {
-            type: "Source",
-            url: "https://github.com/adarsh-279/Reelish",
-            icon: "ri-github-line",
-        },
-        {
-            type: "Website",
-            url: "https://reelish.vercel.app/",
-            icon: "ri-global-line",
-        },
+            {
+                type: "Source",
+                url: "https://github.com/adarsh-279/Reelish",
+                icon: "ri-github-line",
+            },
+            {
+                type: "Website",
+                url: "https://reelish.vercel.app/",
+                icon: "ri-global-line",
+            },
         ],
-        padding: { title: "pt-6", desc: "pt-3", tech: "pt-6", links: "pt-6" },
+        padding: {
+            title: "pt-6",
+            desc: "pt-3",
+            tech: "pt-6",
+            links: "pt-6",
+        },
     },
+
     {
-        id: 3,
+        id: 4,
         title: "Minify",
         description: "URL Shortener.",
         image: project3,
@@ -73,80 +123,118 @@ const projectsData = [
             "TailwindCSS",
         ],
         links: [
-        {
-            type: "Source",
-            url: "https://github.com/adarsh-279/Minify",
-            icon: "ri-github-line",
-        },
-        {
-            type: "Website",
-            url: "https://minify-seven.vercel.app/",
-            icon: "ri-global-line",
-        },
+            {
+                type: "Source",
+                url: "https://github.com/adarsh-279/Minify",
+                icon: "ri-github-line",
+            },
+            {
+                type: "Website",
+                url: "https://minify-seven.vercel.app/",
+                icon: "ri-global-line",
+            },
         ],
-        padding: { title: "pt-6", desc: "pt-3", tech: "pt-6", links: "pt-6" },
+        padding: {
+            title: "pt-6",
+            desc: "pt-3",
+            tech: "pt-6",
+            links: "pt-6",
+        },
     },
+
     {
-        id: 4,
+        id: 5,
         title: "Plantory",
         description: "Helping Gardens Speak, One Story at a Time.",
         image: project4,
-        technologies: ["React.js", "Locomotive", "Framer Motion", "TailwindCSS"],
-        links: [
-        {
-            type: "Source",
-            url: "https://github.com/adarsh-279/Plantory",
-            icon: "ri-github-line",
-        },
-        {
-            type: "Website",
-            url: "https://plantory-five.vercel.app/",
-            icon: "ri-global-line",
-        },
+        technologies: [
+            "React.js",
+            "Locomotive",
+            "Framer Motion",
+            "TailwindCSS",
         ],
-        padding: { title: "pt-6", desc: "pt-3", tech: "pt-6", links: "pt-6" },
-    },
-    {
-        id: 5,
-        title: "Cinemate",
-        description:"Your gateway to trending movies and TV shows around the world.",
-        image: project5,
-        technologies: ["React.js", "TailwindCSS", "TMDB API"],
         links: [
-        {
-            type: "Source",
-            url: "https://github.com/adarsh-279/Cinemate",
-            icon: "ri-github-line",
-        },
-        {
-            type: "Website",
-            url: "https://cinemate-self.vercel.app/",
-            icon: "ri-global-line",
-        },
+            {
+                type: "Source",
+                url: "https://github.com/adarsh-279/Plantory",
+                icon: "ri-github-line",
+            },
+            {
+                type: "Website",
+                url: "https://plantory-five.vercel.app/",
+                icon: "ri-global-line",
+            },
         ],
-        padding: { title: "pt-6", desc: "pt-3", tech: "pt-6", links: "pt-6" },
+        padding: {
+            title: "pt-6",
+            desc: "pt-3",
+            tech: "pt-6",
+            links: "pt-6",
+        },
     },
+
     {
         id: 6,
+        title: "Cinemate",
+        description:
+            "Your gateway to trending movies and TV shows around the world.",
+        image: project5,
+        technologies: [
+            "React.js",
+            "TailwindCSS",
+            "TMDB API",
+        ],
+        links: [
+            {
+                type: "Source",
+                url: "https://github.com/adarsh-279/Cinemate",
+                icon: "ri-github-line",
+            },
+            {
+                type: "Website",
+                url: "https://cinemate-self.vercel.app/",
+                icon: "ri-global-line",
+            },
+        ],
+        padding: {
+            title: "pt-6",
+            desc: "pt-3",
+            tech: "pt-6",
+            links: "pt-6",
+        },
+    },
+
+    {
+        id: 7,
         title: "Enhancia",
         description: "AI Image Enhancer.",
         image: project6,
-        technologies: ["React.js", "TailwindCSS", "PicWish API"],
-        links: [
-        {
-            type: "Source",
-            url: "https://github.com/adarsh-279/Enhancia",
-            icon: "ri-github-line",
-        },
-        {
-            type: "Website",
-            url: "https://enhancia-beryl.vercel.app/",
-            icon: "ri-global-line",
-        },
+        technologies: [
+            "React.js",
+            "TailwindCSS",
+            "PicWish API",
         ],
-        padding: { title: "pt-6", desc: "pt-3", tech: "pt-6", links: "pt-6" },
+        links: [
+            {
+                type: "Source",
+                url: "https://github.com/adarsh-279/Enhancia",
+                icon: "ri-github-line",
+            },
+            {
+                type: "Website",
+                url: "https://enhancia-beryl.vercel.app/",
+                icon: "ri-global-line",
+            },
+        ],
+        padding: {
+            title: "pt-6",
+            desc: "pt-3",
+            tech: "pt-6",
+            links: "pt-6",
+        },
     },
 ];
+
 
 const Projects = () => {
     return (
