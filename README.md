@@ -55,7 +55,8 @@ This website showcases my skills, projects, education, and experience with a cle
 ---
 ## 🖼️ Website's Screenshot
 
-<img width="1920" height="1440" alt="934_1x_shots_so" src="https://github.com/user-attachments/assets/8de6ca68-30a1-4bfd-9c90-ad9569a0b34a" />
+<img width="1920" height="1440" alt="93_1x_shots_so" src="https://github.com/user-attachments/assets/ef22492e-d7e1-48c2-92b2-3a1db95d6295" />
+
 
 ---
 
@@ -83,19 +84,21 @@ Directory structure:
     │   │   │   └── e4af272ccee01ff0-s.p.ttf
     │   │   └── images/
     │   │       ├── gnit_logo.webp
+    │   │       ├── gridcrest_logo.webp
     │   │       ├── img1.webp
     │   │       ├── img2.webp
     │   │       ├── img3.webp
-    │   │       ├── inamigos_logo.webp
     │   │       ├── project1.webp
     │   │       ├── project2.webp
     │   │       ├── project3.webp
     │   │       ├── project4.webp
     │   │       ├── project5.webp
-    │   │       └── project6.webp
+    │   │       ├── project6.webp
+    │   │       └── project7.webp
     │   ├── components/
     │   │   ├── Footer.jsx
     │   │   ├── Navbar.jsx
+    │   │   ├── Skills.jsx
     │   │   └── SmoothScroll.jsx
     │   ├── index.css
     │   ├── main.jsx
@@ -107,6 +110,7 @@ Directory structure:
     │   │   └── Work.jsx
     │   └── routing/
     │       └── Routing.jsx
+    ├── vercel.json
     └── vite.config.js
 ```
 
@@ -123,7 +127,7 @@ Directory structure:
 
 ## 🧾 License
 
-This project is open-source and available under the MIT License.
+This project is open-source and available under the Apache-2.0 License.
 
 ---
 
