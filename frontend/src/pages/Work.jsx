@@ -11,7 +11,7 @@ const workData = [
     points: [
       "Documented 20+ project features and workflows, improving team productivity by 20% through structured documentation.",
       "Created and maintained SRS and technical documentation, while identifying and reporting 15+ bugs to improve project quality.",
-      "Applied newly acquired technical skills to support project delivery, feature understanding, and documentation workflows.",
+      "Assisted in deploying project builds 3 times on the organization’s in-house server, gaining hands-on exposure to deployment and project delivery.",
     ],
   },
 ];
