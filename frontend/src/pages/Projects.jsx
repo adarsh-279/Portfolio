@@ -240,18 +240,18 @@ const Projects = () => {
     return (
         <>
             <Navbar />
-            <div className="dark:bg-[#030712] opacity-100 w-full min-h-screen p-5 pt-15 dark:text-white font-[inter]">
+            <div className="dark:bg-[#030712] opacity-100 w-full min-h-screen p-4 sm:p-5 pt-15 dark:text-white font-[inter]">
                 <h1 className="w-full md:w-[90%] lg:w-[70%] xl:w-[50%] mx-auto pt-20 text-4xl md:text-5xl text-balance font-[calistoga]">my projects.</h1>
 
-            <div className="w-full md:w-[90%] lg:w-[70%] xl:w-[50%] mx-auto pt-10 gap-5 grid md:grid-cols-2 items-center justify-between">
+            <div className="w-full md:w-[90%] lg:w-[70%] xl:w-[50%] mx-auto pt-8 sm:pt-10 gap-5 grid grid-cols-1 md:grid-cols-2 items-stretch">
                 {projectsData.map((project) => (
                     <div
                         key={project.id}
-                        className="h-[56vh] md:h-[45vh] lg:h-[35vh] xl:h-[38vh] 2xl:h-[67vh] border rounded-xl border-[#7a7a7a52] dark:border-[#1F2937]"
+                        className="h-full border rounded-xl border-[#7a7a7a52] dark:border-[#1F2937]"
                     >
-                    <div className="p-8">
+                    <div className="h-full p-4 sm:p-6">
                         <img
-                            className="rounded-xl"
+                            className="w-full aspect-[16/10] object-cover rounded-xl"
                             src={project.image}
                             alt={project.title}
                         />
@@ -270,7 +270,7 @@ const Projects = () => {
                         </div>
 
                         <div
-                            className={`${project.padding.links} flex gap-1 text-white dark:text-black`}
+                            className={`${project.padding.links} flex flex-wrap gap-1 text-white dark:text-black`}
                         >
                             {project.links.map((link, idx) => (
                                 <a
