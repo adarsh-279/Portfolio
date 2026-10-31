@@ -5,9 +5,9 @@ const Education = () => {
     <div className='w-full border-2 border-[#7a7a7a52] dark:border-[#1F2937] rounded-lg font-[inter]'>
       <div className='w-full flex flex-col'>
         <div className='w-full p-4 flex justify-around items-start'>
-          <img className='bg-[#F3F4F6] dark:bg-white rounded-full w-12' src={gnit_logo} alt="" />
-          <div className='w-full ml-4 dark:text-white flex flex-col'>
-            <h1 className='text-xs opacity-60'>Aug 24 - Present</h1>
+          <img className='bg-[#F3F4F6] dark:bg-white rounded-full w-12 shrink-0' src={gnit_logo} alt="" />
+          <div className='w-full min-w-0 ml-4 dark:text-white flex flex-col'>
+            <h1 className='text-xs opacity-60'>Aug 2024 - Present</h1>
             <h1 className='text-md font-semibold'>Gurunanak Institute Of Technology, Kolkata, India</h1>
             <h1 className='text-sm opacity-60'>B.Tech in Information Technology</h1>
             <h1 className='text-sm mt-2'>Relevant Course Work :</h1>

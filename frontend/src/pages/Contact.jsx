@@ -28,17 +28,17 @@ const ContactForm = () => {
   return (
     <>
       <Navbar />
-      <div className="dark:bg-[#030712] opacity-100 w-full min-h-screen p-5 pt-15 dark:text-white font-[inter]">
+      <div className="dark:bg-[#030712] opacity-100 w-full min-h-screen p-4 sm:p-5 pt-15 dark:text-white font-[inter]">
         <div className="w-full mx-auto">
           <div className="w-full md:w-[90%] lg:w-[70%] xl:w-[50%] mx-auto pt-20">
-            <h1 className="text-5xl text-balance font-[calistoga] pb-6">
+            <h1 className="text-4xl sm:text-5xl text-balance font-[calistoga] pb-6">
               contact me.
             </h1>
             <form
               onSubmit={handleSubmit}
               className="flex flex-col gap-2 text-sm"
             >
-              <div className="flex gap-3">
+              <div className="flex flex-col sm:flex-row gap-3">
                 <input
                   type="text"
                   className="w-full px-3 py-2 border border-[#7a7a7a52] dark:border-[#1f2937] rounded-md"

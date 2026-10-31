@@ -2,18 +2,18 @@ import gridcrest_logo from "../assets/images/gridcrest_logo.webp";
 
 
 const workData = [
-  {
-    id: 1,
-    company: "GridCrest Technologies Pvt Ltd.",
-    role: "Software Engineer - Intern",
-    duration: "July 2026 - Present",
-    logo: gridcrest_logo,
-    points: [
-      "Documented 20+ project features and workflows, improving team productivity by 20% through structured documentation.",
-      "Created and maintained SRS and technical documentation, while identifying and reporting 15+ bugs to improve project quality.",
-      "Assisted in deploying project builds 3 times on the organization’s in-house server, gaining hands-on exposure to deployment and project delivery.",
-    ],
-  },
+    {
+        id: 1,
+        company: "GridCrest Technologies Pvt Ltd.",
+        role: "Software Engineer - Intern",
+        duration: "July 2026 - October 2026 (3 months)",
+        logo: gridcrest_logo,
+        points: [
+            "Documented 20+ project features and workflows, improving knowledge sharing and team productivity by 20%.",
+            "Created and maintained SRS and technical documentation, while identifying and reporting 15+ bugs to improve project quality.",
+            "Independently deploying project builds 3 times on the organization’s in-house server, gaining hands-on exposure to deployment and project delivery.",
+        ],
+    },
 ];
 
 const Work = () => {
@@ -25,14 +25,14 @@ const Work = () => {
                         key={work.id}
                         className="w-full border-2 border-[#7a7a7a52] dark:border-[#1F2937] rounded-lg"
                     >
-                        <div className="w-full p-4 flex justify-around items-start">
+                        <div className="w-full p-4 flex items-start gap-3">
                             <img
-                                className="rounded-full w-12 h-12 object-cover"
+                                className="rounded-full w-12 h-12 object-cover shrink-0"
                                 src={work.logo}
                                 alt={`${work.company} logo`}
                             />
 
-                            <div className="w-full ml-4 dark:text-white flex flex-col">
+                            <div className="w-full min-w-0 dark:text-white flex flex-col">
                                 <h1 className="text-xs opacity-60">
                                     {work.duration}
                                 </h1>
@@ -63,4 +63,3 @@ const Work = () => {
 };
 
 export default Work;
-
